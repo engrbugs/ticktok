@@ -22,6 +22,15 @@ export type SubtitleProp = {
   text: string;
 };
 
+// Extended caption type with word-level tokens
+export type CaptionWithTokens = Caption & {
+  tokens?: Array<{
+    text: string;
+    startMs: number;
+    endMs: number;
+  }>;
+};
+
 export const captionedVideoSchema = z.object({
   src: z.string(),
 });
@@ -55,7 +64,7 @@ const SWITCH_CAPTIONS_EVERY_MS = 1200;
 export const CaptionedVideo: React.FC<{
   src: string;
 }> = ({ src }) => {
-  const [subtitles, setSubtitles] = useState<Caption[]>([]);
+  const [subtitles, setSubtitles] = useState<CaptionWithTokens[]>([]);
   const { delayRender, continueRender } = useDelayRender();
   const [handle] = useState(() => delayRender());
   const { fps } = useVideoConfig();
@@ -70,7 +79,7 @@ export const CaptionedVideo: React.FC<{
     try {
       await loadFont();
       const res = await fetch(subtitlesFile);
-      const data = (await res.json()) as Caption[];
+      const data = (await res.json()) as CaptionWithTokens[];
       setSubtitles(data);
       continueRender(handle);
     } catch (e) {
@@ -91,6 +100,25 @@ export const CaptionedVideo: React.FC<{
   }, [fetchSubtitles, src, subtitlesFile]);
 
   const { pages } = useMemo(() => {
+    // If captions already have tokens (from SRT conversion), use them directly
+    if (subtitles && subtitles.length > 0 && (subtitles[0] as CaptionWithTokens).tokens) {
+      const tokenCaptions = subtitles as CaptionWithTokens[];
+      // Convert our tokens to TikTokPage format
+      return {
+        pages: tokenCaptions.map((caption) => ({
+          text: caption.text,
+          startMs: caption.startMs,
+          endMs: caption.endMs,
+          durationMs: caption.endMs - caption.startMs,
+          tokens: caption.tokens!.map((token) => ({
+            text: token.text,
+            fromMs: token.startMs,
+            toMs: token.endMs,
+          })),
+        })),
+      };
+    }
+    // Otherwise use createTikTokStyleCaptions to generate tokens
     return createTikTokStyleCaptions({
       combineTokensWithinMilliseconds: SWITCH_CAPTIONS_EVERY_MS,
       captions: subtitles ?? [],

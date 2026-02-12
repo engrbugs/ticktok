@@ -1,0 +1,70 @@
+[
+  {
+    "startMs": 0,
+    "endMs": 11859,
+    "text": "Using Remotion's TikTok template, you can create engaging reels and TikToks by transcribing your audio using Whisper CPP and animating your captions with React.",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "Using Remotion's",
+        "startMs": 0,
+        "endMs": 988
+      },
+      {
+        "text": "TikTok template,",
+        "startMs": 988,
+        "endMs": 1976
+      },
+      {
+        "text": "you can",
+        "startMs": 1976,
+        "endMs": 2964
+      },
+      {
+        "text": "create engaging",
+        "startMs": 2964,
+        "endMs": 3953
+      },
+      {
+        "text": "reels and",
+        "startMs": 3953,
+        "endMs": 4941
+      },
+      {
+        "text": "TikToks by",
+        "startMs": 4941,
+        "endMs": 5929
+      },
+      {
+        "text": "transcribing your",
+        "startMs": 5929,
+        "endMs": 6917
+      },
+      {
+        "text": "audio using",
+        "startMs": 6917,
+        "endMs": 7906
+      },
+      {
+        "text": "Whisper CPP",
+        "startMs": 7906,
+        "endMs": 8894
+      },
+      {
+        "text": "and animating",
+        "startMs": 8894,
+        "endMs": 9882
+      },
+      {
+        "text": "your captions",
+        "startMs": 9882,
+        "endMs": 10870
+      },
+      {
+        "text": "with React.",
+        "startMs": 10870,
+        "endMs": 11859
+      }
+    ]
+  }
+]

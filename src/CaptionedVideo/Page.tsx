@@ -1,92 +1,54 @@
 import React from "react";
 import {
   AbsoluteFill,
-  interpolate,
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import { TheBoldFont } from "../load-font";
-import { fitText } from "@remotion/layout-utils";
-import { makeTransform, scale, translateY } from "@remotion/animation-utils";
 import { TikTokPage } from "@remotion/captions";
 
-const fontFamily = TheBoldFont;
-
-const container: React.CSSProperties = {
-  justifyContent: "center",
-  alignItems: "center",
-  top: undefined,
-  bottom: 350,
-  height: 150,
-};
-
-const DESIRED_FONT_SIZE = 120;
-const HIGHLIGHT_COLOR = "#39E508";
-
 export const Page: React.FC<{
-  readonly enterProgress: number;
   readonly page: TikTokPage;
-}> = ({ enterProgress, page }) => {
+}> = ({ page }) => {
   const frame = useCurrentFrame();
-  const { width, fps } = useVideoConfig();
+  const { fps, height } = useVideoConfig();
   const timeInMs = (frame / fps) * 1000;
 
-  const fittedText = fitText({
-    fontFamily,
-    text: page.text,
-    withinWidth: width * 0.9,
-    textTransform: "uppercase",
-  });
-
-  const fontSize = Math.min(DESIRED_FONT_SIZE, fittedText.fontSize);
+  // Find THE active chunk (1-2 words)
+  const activeToken = page.tokens.find(
+    (t) => t.fromMs <= timeInMs && t.toMs > timeInMs
+  );
 
   return (
-    <AbsoluteFill style={container}>
-      <div
-        style={{
-          fontSize,
-          color: "white",
-          WebkitTextStroke: "20px black",
-          paintOrder: "stroke",
-          transform: makeTransform([
-            scale(interpolate(enterProgress, [0, 1], [0.8, 1])),
-            translateY(interpolate(enterProgress, [0, 1], [50, 0])),
-          ]),
-          fontFamily,
-          textTransform: "uppercase",
-        }}
-      >
-        <span
+    <AbsoluteFill
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        paddingTop: `${(height * 2) / 3}px`,
+      }}
+    >
+      {activeToken && (
+        <div
           style={{
-            transform: makeTransform([
-              scale(interpolate(enterProgress, [0, 1], [0.8, 1])),
-              translateY(interpolate(enterProgress, [0, 1], [50, 0])),
-            ]),
+            fontSize: "110px", // VERY large like the image
+            fontWeight: 900,
+            fontFamily: "Arial Black, Impact, sans-serif", // Bold blocky font
+            textTransform: "uppercase",
+            color: "white",
+            WebkitTextStroke: "12px black", // THICK black outline
+            paintOrder: "stroke fill",
+            textAlign: "center",
+            background: "transparent",
+            padding: "0 20px", // Side padding for long words
+            width: "100%",
+            display: "block",
+            letterSpacing: "1px",
+            lineHeight: "1.1", // Tight line height
           }}
         >
-          {page.tokens.map((t) => {
-            const startRelativeToSequence = t.fromMs - page.startMs;
-            const endRelativeToSequence = t.toMs - page.startMs;
-
-            const active =
-              startRelativeToSequence <= timeInMs &&
-              endRelativeToSequence > timeInMs;
-
-            return (
-              <span
-                key={t.fromMs}
-                style={{
-                  display: "inline",
-                  whiteSpace: "pre",
-                  color: active ? HIGHLIGHT_COLOR : "white",
-                }}
-              >
-                {t.text}
-              </span>
-            );
-          })}
-        </span>
-      </div>
+          {activeToken.text}
+        </div>
+      )}
     </AbsoluteFill>
   );
 };
