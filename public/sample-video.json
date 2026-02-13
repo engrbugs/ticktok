@@ -1,69 +1,875 @@
 [
   {
-    "startMs": 0,
-    "endMs": 11859,
-    "text": "Using Remotion's TikTok template, you can create engaging reels and TikToks by transcribing your audio using Whisper CPP and animating your captions with React.",
+    "startMs": 720,
+    "endMs": 6640,
+    "text": "Sure. Different angles, similar threads. Taoism teaches that struggle comes from resisting what",
     "confidence": 1,
     "tokens": [
       {
-        "text": "Using Remotion's",
-        "startMs": 0,
-        "endMs": 988
+        "text": "Sure. Different",
+        "startMs": 720,
+        "endMs": 1565
       },
       {
-        "text": "TikTok template,",
-        "startMs": 988,
-        "endMs": 1976
+        "text": "angles, similar",
+        "startMs": 1565,
+        "endMs": 2411
       },
       {
-        "text": "you can",
-        "startMs": 1976,
-        "endMs": 2964
+        "text": "threads. Taoism",
+        "startMs": 2411,
+        "endMs": 3257
       },
       {
-        "text": "create engaging",
-        "startMs": 2964,
-        "endMs": 3953
+        "text": "teaches that",
+        "startMs": 3257,
+        "endMs": 4102
       },
       {
-        "text": "reels and",
-        "startMs": 3953,
-        "endMs": 4941
+        "text": "struggle comes",
+        "startMs": 4102,
+        "endMs": 4948
       },
       {
-        "text": "TikToks by",
-        "startMs": 4941,
-        "endMs": 5929
+        "text": "from resisting",
+        "startMs": 4948,
+        "endMs": 5794
       },
       {
-        "text": "transcribing your",
-        "startMs": 5929,
-        "endMs": 6917
+        "text": "what",
+        "startMs": 5794,
+        "endMs": 6640
+      }
+    ]
+  },
+  {
+    "startMs": 6640,
+    "endMs": 11919,
+    "text": "is. The Tao is the natural flow of the universe - like water going around rocks instead of fighting",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "is. The",
+        "startMs": 6640,
+        "endMs": 7167
       },
       {
-        "text": "audio using",
-        "startMs": 6917,
-        "endMs": 7906
+        "text": "Tao is",
+        "startMs": 7167,
+        "endMs": 7695
       },
       {
-        "text": "Whisper CPP",
-        "startMs": 7906,
-        "endMs": 8894
+        "text": "the natural",
+        "startMs": 7695,
+        "endMs": 8223
       },
       {
-        "text": "and animating",
-        "startMs": 8894,
-        "endMs": 9882
+        "text": "flow of",
+        "startMs": 8223,
+        "endMs": 8751
       },
       {
-        "text": "your captions",
-        "startMs": 9882,
-        "endMs": 10870
+        "text": "the universe",
+        "startMs": 8751,
+        "endMs": 9279
       },
       {
-        "text": "with React.",
-        "startMs": 10870,
-        "endMs": 11859
+        "text": "- like",
+        "startMs": 9279,
+        "endMs": 9807
+      },
+      {
+        "text": "water going",
+        "startMs": 9807,
+        "endMs": 10335
+      },
+      {
+        "text": "around rocks",
+        "startMs": 10335,
+        "endMs": 10863
+      },
+      {
+        "text": "instead of",
+        "startMs": 10863,
+        "endMs": 11391
+      },
+      {
+        "text": "fighting",
+        "startMs": 11391,
+        "endMs": 11919
+      }
+    ]
+  },
+  {
+    "startMs": 11919,
+    "endMs": 17440,
+    "text": "them. When you struggle financially, Taoism says stop forcing outcomes. The farmer in the story who",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "them. When",
+        "startMs": 11919,
+        "endMs": 12609
+      },
+      {
+        "text": "you struggle",
+        "startMs": 12609,
+        "endMs": 13299
+      },
+      {
+        "text": "financially, Taoism",
+        "startMs": 13299,
+        "endMs": 13989
+      },
+      {
+        "text": "says stop",
+        "startMs": 13989,
+        "endMs": 14679
+      },
+      {
+        "text": "forcing outcomes.",
+        "startMs": 14679,
+        "endMs": 15369
+      },
+      {
+        "text": "The farmer",
+        "startMs": 15369,
+        "endMs": 16059
+      },
+      {
+        "text": "in the",
+        "startMs": 16059,
+        "endMs": 16749
+      },
+      {
+        "text": "story who",
+        "startMs": 16749,
+        "endMs": 17440
+      }
+    ]
+  },
+  {
+    "startMs": 17440,
+    "endMs": 23280,
+    "text": "said \"maybe it's good, maybe it's bad\" - that's Taoist wisdom. You can't judge an event as purely",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "said \"maybe",
+        "startMs": 17440,
+        "endMs": 18088
+      },
+      {
+        "text": "it's good,",
+        "startMs": 18088,
+        "endMs": 18737
+      },
+      {
+        "text": "maybe it's",
+        "startMs": 18737,
+        "endMs": 19386
+      },
+      {
+        "text": "bad\" -",
+        "startMs": 19386,
+        "endMs": 20035
+      },
+      {
+        "text": "that's Taoist",
+        "startMs": 20035,
+        "endMs": 20684
+      },
+      {
+        "text": "wisdom. You",
+        "startMs": 20684,
+        "endMs": 21333
+      },
+      {
+        "text": "can't judge",
+        "startMs": 21333,
+        "endMs": 21982
+      },
+      {
+        "text": "an event",
+        "startMs": 21982,
+        "endMs": 22631
+      },
+      {
+        "text": "as purely",
+        "startMs": 22631,
+        "endMs": 23280
+      }
+    ]
+  },
+  {
+    "startMs": 23280,
+    "endMs": 28800,
+    "text": "good or bad because you don't see the whole picture yet. The Bible frames struggle as testing",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "good or",
+        "startMs": 23280,
+        "endMs": 23893
+      },
+      {
+        "text": "bad because",
+        "startMs": 23893,
+        "endMs": 24506
+      },
+      {
+        "text": "you don't",
+        "startMs": 24506,
+        "endMs": 25120
+      },
+      {
+        "text": "see the",
+        "startMs": 25120,
+        "endMs": 25733
+      },
+      {
+        "text": "whole picture",
+        "startMs": 25733,
+        "endMs": 26346
+      },
+      {
+        "text": "yet. The",
+        "startMs": 26346,
+        "endMs": 26960
+      },
+      {
+        "text": "Bible frames",
+        "startMs": 26960,
+        "endMs": 27573
+      },
+      {
+        "text": "struggle as",
+        "startMs": 27573,
+        "endMs": 28186
+      },
+      {
+        "text": "testing",
+        "startMs": 28186,
+        "endMs": 28800
+      }
+    ]
+  },
+  {
+    "startMs": 28800,
+    "endMs": 35020,
+    "text": "and refinement. Like gold purified by fire. The Book of James says trials produce perseverance.",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "and refinement.",
+        "startMs": 28800,
+        "endMs": 29577
+      },
+      {
+        "text": "Like gold",
+        "startMs": 29577,
+        "endMs": 30355
+      },
+      {
+        "text": "purified by",
+        "startMs": 30355,
+        "endMs": 31132
+      },
+      {
+        "text": "fire. The",
+        "startMs": 31132,
+        "endMs": 31910
+      },
+      {
+        "text": "Book of",
+        "startMs": 31910,
+        "endMs": 32687
+      },
+      {
+        "text": "James says",
+        "startMs": 32687,
+        "endMs": 33465
+      },
+      {
+        "text": "trials produce",
+        "startMs": 33465,
+        "endMs": 34242
+      },
+      {
+        "text": "perseverance.",
+        "startMs": 34242,
+        "endMs": 35020
+      }
+    ]
+  },
+  {
+    "startMs": 35660,
+    "endMs": 41200,
+    "text": "The Old Testament has stories of Job who lost everything but stayed faithful. The idea is that",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "The Old",
+        "startMs": 35660,
+        "endMs": 36275
+      },
+      {
+        "text": "Testament has",
+        "startMs": 36275,
+        "endMs": 36891
+      },
+      {
+        "text": "stories of",
+        "startMs": 36891,
+        "endMs": 37506
+      },
+      {
+        "text": "Job who",
+        "startMs": 37506,
+        "endMs": 38122
+      },
+      {
+        "text": "lost everything",
+        "startMs": 38122,
+        "endMs": 38737
+      },
+      {
+        "text": "but stayed",
+        "startMs": 38737,
+        "endMs": 39353
+      },
+      {
+        "text": "faithful. The",
+        "startMs": 39353,
+        "endMs": 39968
+      },
+      {
+        "text": "idea is",
+        "startMs": 39968,
+        "endMs": 40584
+      },
+      {
+        "text": "that",
+        "startMs": 40584,
+        "endMs": 41200
+      }
+    ]
+  },
+  {
+    "startMs": 41200,
+    "endMs": 46659,
+    "text": "God uses hardship to shape character, not to punish. You're being prepared for something bigger.",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "God uses",
+        "startMs": 41200,
+        "endMs": 41882
+      },
+      {
+        "text": "hardship to",
+        "startMs": 41882,
+        "endMs": 42564
+      },
+      {
+        "text": "shape character,",
+        "startMs": 42564,
+        "endMs": 43247
+      },
+      {
+        "text": "not to",
+        "startMs": 43247,
+        "endMs": 43929
+      },
+      {
+        "text": "punish. You're",
+        "startMs": 43929,
+        "endMs": 44611
+      },
+      {
+        "text": "being prepared",
+        "startMs": 44611,
+        "endMs": 45294
+      },
+      {
+        "text": "for something",
+        "startMs": 45294,
+        "endMs": 45976
+      },
+      {
+        "text": "bigger.",
+        "startMs": 45976,
+        "endMs": 46659
+      }
+    ]
+  },
+  {
+    "startMs": 47799,
+    "endMs": 51600,
+    "text": "Buddhism says suffering exists because we want things to be different than they are.",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "Buddhism says",
+        "startMs": 47799,
+        "endMs": 48342
+      },
+      {
+        "text": "suffering exists",
+        "startMs": 48342,
+        "endMs": 48885
+      },
+      {
+        "text": "because we",
+        "startMs": 48885,
+        "endMs": 49428
+      },
+      {
+        "text": "want things",
+        "startMs": 49428,
+        "endMs": 49971
+      },
+      {
+        "text": "to be",
+        "startMs": 49971,
+        "endMs": 50514
+      },
+      {
+        "text": "different than",
+        "startMs": 50514,
+        "endMs": 51057
+      },
+      {
+        "text": "they are.",
+        "startMs": 51057,
+        "endMs": 51600
+      }
+    ]
+  },
+  {
+    "startMs": 52540,
+    "endMs": 58420,
+    "text": "Attachment creates pain. When you tie your happiness to money or success, you suffer. The",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "Attachment creates",
+        "startMs": 52540,
+        "endMs": 53275
+      },
+      {
+        "text": "pain. When",
+        "startMs": 53275,
+        "endMs": 54010
+      },
+      {
+        "text": "you tie",
+        "startMs": 54010,
+        "endMs": 54745
+      },
+      {
+        "text": "your happiness",
+        "startMs": 54745,
+        "endMs": 55480
+      },
+      {
+        "text": "to money",
+        "startMs": 55480,
+        "endMs": 56215
+      },
+      {
+        "text": "or success,",
+        "startMs": 56215,
+        "endMs": 56950
+      },
+      {
+        "text": "you suffer.",
+        "startMs": 56950,
+        "endMs": 57685
+      },
+      {
+        "text": "The",
+        "startMs": 57685,
+        "endMs": 58420
+      }
+    ]
+  },
+  {
+    "startMs": 58420,
+    "endMs": 58780,
+    "text": "path is about",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "path is",
+        "startMs": 58420,
+        "endMs": 58600
+      },
+      {
+        "text": "about",
+        "startMs": 58600,
+        "endMs": 58780
+      }
+    ]
+  },
+  {
+    "startMs": 58799,
+    "endMs": 62739,
+    "text": "accepting impermanence. Buddha left his palace and found enlightenment",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "accepting impermanence.",
+        "startMs": 58799,
+        "endMs": 59587
+      },
+      {
+        "text": "Buddha left",
+        "startMs": 59587,
+        "endMs": 60375
+      },
+      {
+        "text": "his palace",
+        "startMs": 60375,
+        "endMs": 61163
+      },
+      {
+        "text": "and found",
+        "startMs": 61163,
+        "endMs": 61951
+      },
+      {
+        "text": "enlightenment",
+        "startMs": 61951,
+        "endMs": 62739
+      }
+    ]
+  },
+  {
+    "startMs": 62739,
+    "endMs": 68299,
+    "text": "through facing discomfort directly, not avoiding it. Stoicism teaches that external events are",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "through facing",
+        "startMs": 62739,
+        "endMs": 63533
+      },
+      {
+        "text": "discomfort directly,",
+        "startMs": 63533,
+        "endMs": 64327
+      },
+      {
+        "text": "not avoiding",
+        "startMs": 64327,
+        "endMs": 65121
+      },
+      {
+        "text": "it. Stoicism",
+        "startMs": 65121,
+        "endMs": 65916
+      },
+      {
+        "text": "teaches that",
+        "startMs": 65916,
+        "endMs": 66710
+      },
+      {
+        "text": "external events",
+        "startMs": 66710,
+        "endMs": 67504
+      },
+      {
+        "text": "are",
+        "startMs": 67504,
+        "endMs": 68299
+      }
+    ]
+  },
+  {
+    "startMs": 68299,
+    "endMs": 74219,
+    "text": "neutral. What hurts you is your judgment about them. Epictetus said it's not what happens to you,",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "neutral. What",
+        "startMs": 68299,
+        "endMs": 68956
+      },
+      {
+        "text": "hurts you",
+        "startMs": 68956,
+        "endMs": 69614
+      },
+      {
+        "text": "is your",
+        "startMs": 69614,
+        "endMs": 70272
+      },
+      {
+        "text": "judgment about",
+        "startMs": 70272,
+        "endMs": 70930
+      },
+      {
+        "text": "them. Epictetus",
+        "startMs": 70930,
+        "endMs": 71587
+      },
+      {
+        "text": "said it's",
+        "startMs": 71587,
+        "endMs": 72245
+      },
+      {
+        "text": "not what",
+        "startMs": 72245,
+        "endMs": 72903
+      },
+      {
+        "text": "happens to",
+        "startMs": 72903,
+        "endMs": 73561
+      },
+      {
+        "text": "you,",
+        "startMs": 73561,
+        "endMs": 74219
+      }
+    ]
+  },
+  {
+    "startMs": 74579,
+    "endMs": 80200,
+    "text": "but how you react. A Stoic would say financial struggle doesn't touch your true worth because",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "but how",
+        "startMs": 74579,
+        "endMs": 75281
+      },
+      {
+        "text": "you react.",
+        "startMs": 75281,
+        "endMs": 75984
+      },
+      {
+        "text": "A Stoic",
+        "startMs": 75984,
+        "endMs": 76686
+      },
+      {
+        "text": "would say",
+        "startMs": 76686,
+        "endMs": 77389
+      },
+      {
+        "text": "financial struggle",
+        "startMs": 77389,
+        "endMs": 78092
+      },
+      {
+        "text": "doesn't touch",
+        "startMs": 78092,
+        "endMs": 78794
+      },
+      {
+        "text": "your true",
+        "startMs": 78794,
+        "endMs": 79497
+      },
+      {
+        "text": "worth because",
+        "startMs": 79497,
+        "endMs": 80200
+      }
+    ]
+  },
+  {
+    "startMs": 80200,
+    "endMs": 86859,
+    "text": "wealth is external. Your virtue, your character - that's internal and untouchable. All four agree",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "wealth is",
+        "startMs": 80200,
+        "endMs": 81032
+      },
+      {
+        "text": "external. Your",
+        "startMs": 81032,
+        "endMs": 81864
+      },
+      {
+        "text": "virtue, your",
+        "startMs": 81864,
+        "endMs": 82697
+      },
+      {
+        "text": "character -",
+        "startMs": 82697,
+        "endMs": 83529
+      },
+      {
+        "text": "that's internal",
+        "startMs": 83529,
+        "endMs": 84361
+      },
+      {
+        "text": "and untouchable.",
+        "startMs": 84361,
+        "endMs": 85194
+      },
+      {
+        "text": "All four",
+        "startMs": 85194,
+        "endMs": 86026
+      },
+      {
+        "text": "agree",
+        "startMs": 86026,
+        "endMs": 86859
+      }
+    ]
+  },
+  {
+    "startMs": 86859,
+    "endMs": 87560,
+    "text": "on one thing - the",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "on one",
+        "startMs": 86859,
+        "endMs": 87092
+      },
+      {
+        "text": "thing -",
+        "startMs": 87092,
+        "endMs": 87326
+      },
+      {
+        "text": "the",
+        "startMs": 87326,
+        "endMs": 87560
+      }
+    ]
+  },
+  {
+    "startMs": 87659,
+    "endMs": 88759,
+    "text": "struggle isn't random.",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "struggle isn't",
+        "startMs": 87659,
+        "endMs": 88209
+      },
+      {
+        "text": "random.",
+        "startMs": 88209,
+        "endMs": 88759
+      }
+    ]
+  },
+  {
+    "startMs": 88759,
+    "endMs": 88780,
+    "text": "Whether you call it",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "Whether you",
+        "startMs": 88759,
+        "endMs": 88769
+      },
+      {
+        "text": "call it",
+        "startMs": 88769,
+        "endMs": 88780
+      }
+    ]
+  },
+  {
+    "startMs": 88780,
+    "endMs": 90439,
+    "text": "God's plan, natural law,",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "God's plan,",
+        "startMs": 88780,
+        "endMs": 89609
+      },
+      {
+        "text": "natural law,",
+        "startMs": 89609,
+        "endMs": 90439
+      }
+    ]
+  },
+  {
+    "startMs": 90439,
+    "endMs": 115400,
+    "text": "karma, or fate - it's meant to transform you.",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "karma, or",
+        "startMs": 90439,
+        "endMs": 95431
+      },
+      {
+        "text": "fate -",
+        "startMs": 95431,
+        "endMs": 100423
+      },
+      {
+        "text": "it's meant",
+        "startMs": 100423,
+        "endMs": 105415
+      },
+      {
+        "text": "to transform",
+        "startMs": 105415,
+        "endMs": 110407
+      },
+      {
+        "text": "you.",
+        "startMs": 110407,
+        "endMs": 115400
+      }
+    ]
+  },
+  {
+    "startMs": 115400,
+    "endMs": 116379,
+    "text": "Same message,",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "Same message,",
+        "startMs": 115400,
+        "endMs": 116379
+      }
+    ]
+  },
+  {
+    "startMs": 116379,
+    "endMs": 117879,
+    "text": "different words.",
+    "confidence": 1,
+    "tokens": [
+      {
+        "text": "different words.",
+        "startMs": 116379,
+        "endMs": 117879
       }
     ]
   }

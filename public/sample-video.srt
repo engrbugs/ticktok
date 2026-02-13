@@ -1,4 +1,91 @@
 1
-00:00:00,000 --> 00:00:11,859
-Using Remotion's TikTok template, you can create engaging reels and TikToks by transcribing your audio using Whisper CPP and animating your captions with React.
+00:00:00,720 --> 00:00:06,640
+Sure. Different angles, similar threads. Taoism teaches that struggle comes from resisting what
 
+2
+00:00:06,640 --> 00:00:11,919
+is. The Tao is the natural flow of the universe - like water going around rocks instead of fighting
+
+3
+00:00:11,919 --> 00:00:17,440
+them. When you struggle financially, Taoism says stop forcing outcomes. The farmer in the story who
+
+4
+00:00:17,440 --> 00:00:23,280
+said "maybe it's good, maybe it's bad" - that's Taoist wisdom. You can't judge an event as purely
+
+5
+00:00:23,280 --> 00:00:28,800
+good or bad because you don't see the whole picture yet. The Bible frames struggle as testing
+
+6
+00:00:28,800 --> 00:00:35,020
+and refinement. Like gold purified by fire. The Book of James says trials produce perseverance.
+
+7
+00:00:35,660 --> 00:00:41,200
+The Old Testament has stories of Job who lost everything but stayed faithful. The idea is that
+
+8
+00:00:41,200 --> 00:00:46,659
+God uses hardship to shape character, not to punish. You're being prepared for something bigger.
+
+9
+00:00:47,799 --> 00:00:51,600
+Buddhism says suffering exists because we want things to be different than they are.
+
+10
+00:00:52,540 --> 00:00:58,420
+Attachment creates pain. When you tie your happiness to money or success, you suffer. The
+
+11
+00:00:58,420 --> 00:00:58,780
+path is about
+
+12
+00:00:58,799 --> 00:01:02,739
+accepting impermanence. Buddha left his palace and found enlightenment
+
+13
+00:01:02,739 --> 00:01:08,299
+through facing discomfort directly, not avoiding it. Stoicism teaches that external events are
+
+14
+00:01:08,299 --> 00:01:14,219
+neutral. What hurts you is your judgment about them. Epictetus said it's not what happens to you,
+
+15
+00:01:14,579 --> 00:01:20,200
+but how you react. A Stoic would say financial struggle doesn't touch your true worth because
+
+16
+00:01:20,200 --> 00:01:26,859
+wealth is external. Your virtue, your character - that's internal and untouchable. All four agree
+
+17
+00:01:26,859 --> 00:01:27,560
+on one thing - the
+
+18
+00:01:27,659 --> 00:01:28,759
+struggle isn't random.
+
+19
+00:01:28,759 --> 00:01:28,780
+Whether you call it
+
+20
+00:01:28,780 --> 00:01:30,439
+God's plan, natural law,
+
+21
+00:01:30,439 --> 00:01:55,400
+karma, or fate - it's meant to transform you.
+
+22
+00:01:55,400 --> 00:01:56,379
+Same message,
+
+23
+00:01:56,379 --> 00:01:57,879
+different words.

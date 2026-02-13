@@ -5,9 +5,7 @@ import {
   cancelRender,
   getStaticFiles,
   OffthreadVideo,
-  Sequence,
   useDelayRender,
-  useVideoConfig,
   watchStaticFile,
 } from "remotion";
 import { z } from "zod";
@@ -15,7 +13,7 @@ import SubtitlePage from "./SubtitlePage";
 import { getVideoMetadata } from "@remotion/media-utils";
 import { loadFont } from "../load-font";
 import { NoCaptionFile } from "./NoCaptionFile";
-import { Caption, createTikTokStyleCaptions } from "@remotion/captions";
+import { Caption } from "@remotion/captions";
 
 export type SubtitleProp = {
   startInSeconds: number;
@@ -55,11 +53,74 @@ const getFileExists = (file: string) => {
   return Boolean(fileExists);
 };
 
+// Smart word grouping: 1 word at a time, unless both are ≤3 chars
+const createSmartChunks = (text: string): string[] => {
+  const words = text.split(/\s+/);
+  const chunks: string[] = [];
+  let i = 0;
+
+  while (i < words.length) {
+    const currentWord = words[i];
+    const nextWord = words[i + 1];
+
+    // Check if both current and next are short (≤3 chars)
+    if (nextWord && currentWord.length <= 3 && nextWord.length <= 3) {
+      // Group them together
+      chunks.push(`${currentWord} ${nextWord}`);
+      i += 2; // Skip both words
+    } else {
+      // Show current word alone
+      chunks.push(currentWord);
+      i += 1;
+    }
+  }
+
+  return chunks;
+};
+
+// Create TikTok-style captions with smart word grouping
+const createSmartTikTokCaptions = (captions: Caption[]) => {
+  const pages: Array<{
+    text: string;
+    startMs: number;
+    endMs: number;
+    durationMs: number;
+    tokens: Array<{ text: string; fromMs: number; toMs: number }>;
+  }> = [];
+
+  for (const caption of captions) {
+    const { startMs, endMs, text } = caption;
+    const durationMs = endMs - startMs;
+
+    // Create smart chunks
+    const chunks = createSmartChunks(text);
+
+    // Distribute time evenly across chunks
+    const timePerChunk = durationMs / chunks.length;
+
+    const tokens = chunks.map((chunk, index) => ({
+      text: chunk,
+      fromMs: startMs + Math.floor(index * timePerChunk),
+      toMs: startMs + Math.floor((index + 1) * timePerChunk),
+    }));
+
+    pages.push({
+      text,
+      startMs,
+      endMs,
+      durationMs,
+      tokens,
+    });
+  }
+
+  return { pages };
+};
+
 // How many captions should be displayed at a time?
 // Try out:
 // - 1500 to display a lot of words at a time
 // - 200 to only display 1 word at a time
-const SWITCH_CAPTIONS_EVERY_MS = 1200;
+// Note: This is now handled by smart word grouping logic
 
 export const CaptionedVideo: React.FC<{
   src: string;
@@ -67,7 +128,6 @@ export const CaptionedVideo: React.FC<{
   const [subtitles, setSubtitles] = useState<CaptionWithTokens[]>([]);
   const { delayRender, continueRender } = useDelayRender();
   const [handle] = useState(() => delayRender());
-  const { fps } = useVideoConfig();
 
   const subtitlesFile = src
     .replace(/.mp4$/, ".json")
@@ -118,11 +178,8 @@ export const CaptionedVideo: React.FC<{
         })),
       };
     }
-    // Otherwise use createTikTokStyleCaptions to generate tokens
-    return createTikTokStyleCaptions({
-      combineTokensWithinMilliseconds: SWITCH_CAPTIONS_EVERY_MS,
-      captions: subtitles ?? [],
-    });
+    // Otherwise use smart word grouping
+    return createSmartTikTokCaptions(subtitles ?? []);
   }, [subtitles]);
 
   return (
@@ -135,28 +192,9 @@ export const CaptionedVideo: React.FC<{
           src={src}
         />
       </AbsoluteFill>
-      {pages.map((page, index) => {
-        const nextPage = pages[index + 1] ?? null;
-        const subtitleStartFrame = (page.startMs / 1000) * fps;
-        const subtitleEndFrame = Math.min(
-          nextPage ? (nextPage.startMs / 1000) * fps : Infinity,
-          subtitleStartFrame + SWITCH_CAPTIONS_EVERY_MS,
-        );
-        const durationInFrames = subtitleEndFrame - subtitleStartFrame;
-        if (durationInFrames <= 0) {
-          return null;
-        }
-
-        return (
-          <Sequence
-            key={index}
-            from={subtitleStartFrame}
-            durationInFrames={durationInFrames}
-          >
-            <SubtitlePage key={index} page={page} />;
-          </Sequence>
-        );
-      })}
+      {pages.map((page, index) => (
+        <SubtitlePage key={index} page={page} />
+      ))}
       {getFileExists(subtitlesFile) ? null : <NoCaptionFile />}
     </AbsoluteFill>
   );
